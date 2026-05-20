@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+
+@theme {
+    /* Custom Colors */
+    --color-amber: #F59E0B;
+    --color-amber-dk: #B45309;
+    --color-steel: #1E293B;
+    --color-steel-md: #334155;
+    --color-steel-lt: #475569;
+    --color-slate: #0F172A;
+    --color-snow: #F8FAFC;
+    --color-muted: #94A3B8;
+    --color-danger: #EF4444;
+    --color-success: #22C55E;
+
+    /* Custom Fonts */
+    --font-barlow: "Barlow", sans-serif;
+    --font-condensed: "Barlow Condensed", sans-serif;
+
+    /* Custom Keyframes */
+    @keyframes slowZoom {
+        0% { transform: scale(1.04); }
+        100% { transform: scale(1.12); }
+    }
+    @keyframes slideDown {
+        0% { opacity: 0; transform: translateY(-8px); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Custom Animations */
+    --animate-slowZoom: slowZoom 20s ease-in-out infinite alternate;
+    --animate-slideDown: slideDown 0.25s ease;
+}
+
